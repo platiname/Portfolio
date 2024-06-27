@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RWD - Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <main>
+    <section>
+      <h1 id="title"><strong>Survey Form</strong></h1>
+      <p id="description"><em>Thank you for your time providing us a feedback</em></p>
+    </section>
+
+    <form id="survey-form">
+
+      <fieldset>
+        <section>
+          <label for="name">
+            <p class="question">Enter your name: <input type="text" id="name" placeholder="ex. John Doe" required></p>
+          </label>
+          <label for="email">
+            <p class="question">Enter your email: <input type="email" id="email" placeholder="ex. johndoe@mail.com" required></p><label>
+              <label for="age">
+                <p class="question">Enter your age: <input id="age-num" type="number" placeholder="optional" min="15" max="99"></p>
+              </label>
+        </section>
+
+        <hr>
+
+        <section>
+          <p class="question">How satisfied are you with our courses?</p>
+          <select id="dropdown">
+            <option id="1"> Very satisfied
+            <option id="2"> Satisfied
+            <option id="3"> Meh
+            <option id="4"> Dissatisfied
+            <option id="5"> Very dissatisfied
+          </select>
+
+          <p class="question">Would you recommend us?</p>
+          <label class="answer yes-no" for="yes-opt"><input id="yes-opt" checked type="radio" value="yes" name="yes-maybe-no"> Yes</label>
+          <label class="answer yes-no" for="maybe-opt"><input id="maybe-opt" type="radio" value="maybe" name="yes-maybe-no"> Maybe</label>
+          <label class="answer yes-no" for="no-opt"><input id="no-opt" type="radio" value="no" name="yes-maybe-no"> No</label>
+
+          <p class="question" id="why">Why?</p><textarea rows="15" placeholder="optional"></textarea>
+        </section>
+
+        <hr>
+
+        <section>
+          <p class="question" class="dev-job">What dev job do you aim to get?</p>
+          <ul class="answer">
+            <label for="fed">
+              <li><input id="fed" type="checkbox" value="fed"> Front-End Dev</li>
+            </label>
+            <label for="bed">
+              <li><input id="bed" type="checkbox" value="bed"> Back-End Dev</li>
+            </label>
+            <label for="fsd">
+              <li><input id="fsd" type="checkbox" value="fsd"> Full-Stack Dev</li>
+            </label>
+            <label for="do">
+              <li><input id="do" type="checkbox" value="do"> Dev Ops</li>
+            </label>
+            <label for="other">
+              <li><input id="other" type="checkbox" value="other"> Other</li>
+            </label>
+            <label for="fun">
+              <li><input id="fun" type="checkbox" value="fun"> None, I'm just having <strong><em>FUN</em></strong></li>
+            </label>
+          </ul>
+        </section>
+
+        <hr>
+
+        <section>
+          <p class="question">Tell us more:</p>
+          <textarea id="tellmore" class="answer" rows="15" cols="60" placeholder="optional"></textarea>
+        </section>
+      </fieldset>
+      <div class="box">
+        <!-- <div class="box-btn"> -->
+        <button type="submit" id="submit" value="Submit">SUBMIT</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <h6>Patt Ash - fCC cert 1.1 - 6/2024</h6>
+  </footer>
+</body>
