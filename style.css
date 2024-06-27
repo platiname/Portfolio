@@ -291,6 +291,8 @@ ul {
 
     background-image: linear-gradient(90deg, var(--clr-red), var(--clr-green), var(--clr-blue), var(--clr-red));
     background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
     background-size: 1200%;
 
     animation: nav-bar 60s linear infinite;
